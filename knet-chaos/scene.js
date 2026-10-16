@@ -240,7 +240,7 @@
       const idle = !this.reducedMotion ? Math.sin(time*3)*.025 : 0;
       if (state.status === 'ready') {
         // Stretch visually while aiming, but release from the fixed physics anchor.
-        this.player.position.set(ball.x - (aiming ? aim.vx / 4.7 * .35 : 0), ball.y - (aiming ? aim.vy / 4.7 * .35 : 0) + (aiming ? 0 : idle), .1);
+        this.player.position.set(ball.x - (aiming ? aim.vx / 4.7 * .35 : 0), ball.y - (aiming ? aim.vy / 4.7 * .35 : 0) + (aiming ? 0 : idle), aiming ? .95 : .1);
         const pull = aiming ? Math.hypot(aim.vx,aim.vy)/12 : 0;
         this.player.scale.set(1-pull*.13,1+pull*.35,1-pull*.1);
         this.player.rotation.z = aiming ? -.12 : Math.sin(time*2)*.03;

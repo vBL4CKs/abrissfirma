@@ -1,5 +1,5 @@
 /* Offline shell; this worker owns only the Knet Chaos subdirectory. */
-const VERSION = 'knet-chaos-20261016-1';
+const VERSION = 'knet-chaos-20261016-2';
 const FILES = [
   './', './index.html', './style.css', './app.js', './scene.js', './physics.js',
   './vendor/three.min.js', './assets/hero-bg.png', './assets/icon.svg',
