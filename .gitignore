@@ -1,0 +1,16 @@
+.godot/
+tools/
+build/
+*.tmp
+Spielbereit/
+Webbereit/
+Abrissfirma-Spielbereit.zip
+.openai/
+.env
+.env.*
+!.env.example
+*.log
+*.pck
+*.exe
+*.zip
+*.tpz

@@ -1,0 +1,31 @@
+{
+  "asset": "painted_plaster_wall",
+  "source": "https://polyhaven.com/a/painted_plaster_wall",
+  "license": "CC0-1.0",
+  "downloaded": "2026-10-16",
+  "width_original": "2,0 m",
+  "width_in_game": "2,6 m",
+  "maps": [
+    {
+      "type": "Diffuse",
+      "file": "painted_plaster_wall_diff_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/painted_plaster_wall/painted_plaster_wall_diff_1k.jpg",
+      "md5": "15ba8c1f63a5ab412b1eabe31728540a",
+      "bytes": 686726
+    },
+    {
+      "type": "nor_gl",
+      "file": "painted_plaster_wall_nor_gl_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/painted_plaster_wall/painted_plaster_wall_nor_gl_1k.jpg",
+      "md5": "43fff290583dbdfc9bfa088a2750e840",
+      "bytes": 900461
+    },
+    {
+      "type": "Rough",
+      "file": "painted_plaster_wall_rough_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/painted_plaster_wall/painted_plaster_wall_rough_1k.jpg",
+      "md5": "e076a6360329a2bc18c7397dc50c074a",
+      "bytes": 354762
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "asset": "concrete_wall_007",
+  "source": "https://polyhaven.com/a/concrete_wall_007",
+  "license": "CC0-1.0",
+  "downloaded": "2026-10-16",
+  "width_original": "2,2 m",
+  "width_in_game": "3,0 m",
+  "maps": [
+    {
+      "type": "Diffuse",
+      "file": "concrete_wall_007_diff_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/concrete_wall_007/concrete_wall_007_diff_1k.jpg",
+      "md5": "f8a951200ebe1a42ba57ef331d94f8e2",
+      "bytes": 654485
+    },
+    {
+      "type": "nor_gl",
+      "file": "concrete_wall_007_nor_gl_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/concrete_wall_007/concrete_wall_007_nor_gl_1k.jpg",
+      "md5": "7d62088fb4f40833226cdb2a09476a58",
+      "bytes": 602349
+    },
+    {
+      "type": "Rough",
+      "file": "concrete_wall_007_rough_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/concrete_wall_007/concrete_wall_007_rough_1k.jpg",
+      "md5": "57fc45c0410543a5117bbfab360e040a",
+      "bytes": 563812
+    }
+  ]
+}

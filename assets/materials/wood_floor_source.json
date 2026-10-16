@@ -1,0 +1,31 @@
+{
+  "asset": "wood_floor",
+  "source": "https://polyhaven.com/a/wood_floor",
+  "license": "CC0-1.0",
+  "downloaded": "2026-10-16",
+  "width_original": "1,7 m",
+  "width_in_game": "2,0 m",
+  "maps": [
+    {
+      "type": "Diffuse",
+      "file": "wood_floor_diff_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_floor/wood_floor_diff_1k.jpg",
+      "md5": "b7e927d2bf2f8f103820ff3890c8407c",
+      "bytes": 734493
+    },
+    {
+      "type": "nor_gl",
+      "file": "wood_floor_nor_gl_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_floor/wood_floor_nor_gl_1k.jpg",
+      "md5": "620f174d2c09b579c5d02d37b2106668",
+      "bytes": 423303
+    },
+    {
+      "type": "Rough",
+      "file": "wood_floor_rough_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_floor/wood_floor_rough_1k.jpg",
+      "md5": "36146634f1dbd1bc30cd071857584c10",
+      "bytes": 527754
+    }
+  ]
+}

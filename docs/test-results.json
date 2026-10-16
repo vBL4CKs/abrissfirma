@@ -1,0 +1,271 @@
+{
+	"checks": 52,
+	"duration_ms": 26624,
+	"failed": 0,
+	"godot_version": "4.7.2-stable (official)",
+	"original_save_restored": true,
+	"passed": 52,
+	"results": [
+		{
+			"detail": "",
+			"name": "Hauptszene kann geladen werden",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Spiel startet mit Briefing und pausierter Welt",
+			"passed": true
+		},
+		{
+			"detail": "408 Bauteile",
+			"name": "Begehbares Haus, Spielfigur und HUD vorhanden",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Auftrag annehmen setzt Spiel fort",
+			"passed": true
+		},
+		{
+			"detail": "Fadenkreuz [P: (708.0, 430.0), S: (24.0, 40.0)], Viewport [P: (0.0, 0.0), S: (1440.0, 900.0)]",
+			"name": "Fadenkreuz liegt sichtbar in der Viewportmitte",
+			"passed": true
+		},
+		{
+			"detail": "[P: (270.0, 755.0), S: (900.0, 131.0)]",
+			"name": "Werkzeugleiste vollständig am unteren Bildschirmrand",
+			"passed": true
+		},
+		{
+			"detail": "[P: (1076.0, 22.0), S: (340.0, 121.0)]",
+			"name": "Auftragskarte vollständig rechts oben sichtbar",
+			"passed": true
+		},
+		{
+			"detail": "Beschriftungsgröße (110.0, 17.0)",
+			"name": "Firmenkontobeschriftung bleibt horizontal lesbar",
+			"passed": true
+		},
+		{
+			"detail": "Y=0.010",
+			"name": "Spieler kollidiert mit dem Baustellenboden",
+			"passed": true
+		},
+		{
+			"detail": "0 anfänglich ungestützte Teile",
+			"name": "Neues Haus vollständig abgestützt",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Synthetisches WASD erreicht die Eingabeabfrage",
+			"passed": true
+		},
+		{
+			"detail": "Z=4.547",
+			"name": "Spieler läuft durch die vordere Haustür",
+			"passed": true
+		},
+		{
+			"detail": "Position (-0.649999, 0.080222, 2.314849)",
+			"name": "Hausinneres vom Eingang aus erreichbar",
+			"passed": true
+		},
+		{
+			"detail": "Position (4.45, 3.893735, -3.225363)",
+			"name": "Treppe führt ohne Springen ins Obergeschoss",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Escape pausiert nach vollständiger Eingabeverarbeitung",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Pausierte Spielfigur wird nicht weiter verarbeitet",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Zweites Escape setzt das Spiel fort",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Pause öffnet Menü und hält Welt an",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Mauseinstellung mit Spielfigur verbunden",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Grafikeinstellung schaltet Schatten ab",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Menüfortsetzung hebt Pause auf",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Werkzeugauswahl mit Spielfigur verbunden",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Werkstatt öffnet während einer Spielrunde",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Materialien besitzen unterschiedliche Härte und sichtbaren Schaden",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Hammer zielt per Physikstrahl auf die Hauswand",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Erster Hammerschlag beschädigt die Wand",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Mehrere Hammerschläge erzeugen örtliche Ausbrüche und Trümmer",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Beide Gerätetypen lassen sich platzieren",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Doppelte Platzierung verbraucht keinen Vorrat",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Fernzündung verbraucht platzierte Geräte und zerstört Bauteile",
+			"passed": true
+		},
+		{
+			"detail": "Impuls=12, Wirbel=6 Bauteile",
+			"name": "Beide Explosionstypen haben wirksame, unterschiedliche Profile",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Neustart setzt Schaden und Vorrat zurück",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Alte Einsturzprüfung verändert neuen Auftrag nicht",
+			"passed": true
+		},
+		{
+			"detail": "362 vorgemerkte Teile; 81.4 % abgerissen",
+			"name": "Fehlende Stützen lösen einen fortschreitenden Einsturz bis zum Abrissziel aus",
+			"passed": true
+		},
+		{
+			"detail": "71 aktive Trümmer",
+			"name": "Trümmerzahl bleibt begrenzt",
+			"passed": true
+		},
+		{
+			"detail": "Erwartete Auszahlung: 1380 €",
+			"name": "72-%-Ziel löst Auszahlung und Auswertung aus",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Abgeschlossener Auftrag wird nur einmal bezahlt",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Neustart eines bezahlten Auftrags verhindert doppelte Auszahlung",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Auszahlung wird auf Datenträger gespeichert",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Shop kauft Hammerverbesserung zum richtigen Preis",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Doppelte und unbekannte Käufe werden abgelehnt",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Arbeitsstiefel erhöhen Bewegungstempo",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Kauf ohne ausreichendes Geld wird abgelehnt",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Impulsverbesserung ist kaufbar",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Geld und alle drei Verbesserungen werden neu geladen",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Geladene Verbesserungen wirken auf die Spielfigur",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Nächster Auftrag startet mit neuem Titel und frischem Haus",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Firmenfortschritt überlebt den Auftragswechsel",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Testspielstand kann geschrieben werden",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Beschädigter Spielstand wird sicher zurückgesetzt",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Ungültige Geld-, Zähler- und Upgrade-Werte werden gefiltert",
+			"passed": true
+		},
+		{
+			"detail": "Vorher vorhanden: false",
+			"name": "Originalspielstand bytegenau wiederhergestellt",
+			"passed": true
+		}
+	],
+	"timestamp_utc": "2026-10-16T14:08:12"
+}

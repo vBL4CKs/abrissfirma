@@ -1,0 +1,48 @@
+{
+	"active_rigidbodies": 9,
+	"before": {
+		"average_fps": 118.7,
+		"frames": 475,
+		"max_frame_ms": 21.17,
+		"mean_frame_ms": 8.43,
+		"one_percent_low_fps": 56.6,
+		"p99_frame_ms": 16.56,
+		"peak_live_rigidbodies": 0,
+		"sampled_seconds": 4.002185,
+		"visible_draw_calls": 3867,
+		"visible_primitives": 55893
+	},
+	"collapse": {
+		"average_fps": 49.5,
+		"frames": 182,
+		"max_frame_ms": 120.79,
+		"mean_frame_ms": 20.2,
+		"one_percent_low_fps": 9.2,
+		"p99_frame_ms": 97.26,
+		"peak_live_rigidbodies": 72,
+		"sampled_seconds": 3.676675,
+		"visible_draw_calls": 7610,
+		"visible_primitives": 87735
+	},
+	"display_server": "Windows",
+	"fps_limit": "unbegrenzt",
+	"godot_version": "4.7.2-stable (official)",
+	"gpu": "GeForce GTX 1050 Ti",
+	"gpu_vendor": "NVIDIA",
+	"method": "Monotone Time.get_ticks_usec() zwischen tatsächlich gerenderten Frames; Aufwärmphase vor Messung. 1-%-Low = 1000 / Mittelwert der langsamsten 1 % der Framezeiten.",
+	"original_save_unchanged": true,
+	"pending_fragments": 0,
+	"quality": "Mittel (Stufe 1)",
+	"remaining_queue": 0,
+	"removed_pieces": 408,
+	"rendering_method": "gl_compatibility",
+	"resolution": [
+		1280,
+		800
+	],
+	"sample_seconds": 4.0,
+	"settled_count": 1158,
+	"timestamp_utc": "2026-10-16T14:05:19",
+	"total_pieces": 408,
+	"vsync": "aus"
+}

@@ -1,0 +1,135 @@
+{
+	"checks": 25,
+	"duration_ms": 27361,
+	"failed": 0,
+	"godot_version": "4.7.2-stable (official)",
+	"passed": 25,
+	"results": [
+		{
+			"detail": "",
+			"name": "Hauptszene für Realismusprüfung lädt",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Haus enthält Materialien Ziegel, Beton, Holz und Glas",
+			"passed": true
+		},
+		{
+			"detail": "78 Anschlüsse, 0 offene Fugen, größte 0.0000 m",
+			"name": "Unbeschädigte Fassade hat keine offenen Rasterfugen",
+			"passed": true
+		},
+		{
+			"detail": "3 von 3",
+			"name": "Ziegel, Beton und Holz besitzen Albedo- und Rauheitstexturen",
+			"passed": true
+		},
+		{
+			"detail": "3 von 3",
+			"name": "Ziegel, Beton und Holz besitzen Normalmaps",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Lokaler Schadentest findet eine Ziegelwand",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Mehrere lokale Treffer beschädigen eine Wand vor dem Ausbruch",
+			"passed": true
+		},
+		{
+			"detail": "2 Schadenselemente",
+			"name": "Treffer erzeugen örtliche Risse oder Abplatzungen",
+			"passed": true
+		},
+		{
+			"detail": "brick, concrete, wood, glass",
+			"name": "Alle vier Materialien erzeugen Trümmer",
+			"passed": true
+		},
+		{
+			"detail": "13 geschlossene Meshes / 13 Körper",
+			"name": "Bruchstücke sind geschlossene Meshes mit Innenflächen",
+			"passed": true
+		},
+		{
+			"detail": "13 unregelmäßige Meshes / 13 Körper",
+			"name": "Bruchstücke verwenden unregelmäßige Geometrie statt BoxMesh",
+			"passed": true
+		},
+		{
+			"detail": "13 konvexe Formen / 13 Körper",
+			"name": "Bruchstücke besitzen passende konvexe Kollisionen",
+			"passed": true
+		},
+		{
+			"detail": "Direkt nach Erzeugung höchstens 1.800 m/s",
+			"name": "Abrissimpulse schleudern Trümmer nicht mit 9 m/s fort",
+			"passed": true
+		},
+		{
+			"detail": "50 Trümmer, maximal 1.600 m/s seitlich nach einem Physikschritt",
+			"name": "Echtes Impulsgerät erzeugt zurückhaltende seitliche Trümmerbewegung",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Intaktes Haus ist vollständig abgestützt",
+			"passed": true
+		},
+		{
+			"detail": "362 ungestützt, 384 vorgemerkt, 0 unmittelbar entfernt",
+			"name": "Stützverlust wird als zeitlicher Einsturz vorgemerkt",
+			"passed": true
+		},
+		{
+			"detail": "24 → 58 Bauteile",
+			"name": "Vorgemerkter Einsturz schreitet über mehrere Frames fort",
+			"passed": true
+		},
+		{
+			"detail": "350 wartende Bauteile bereits abgesackt, 350 noch vorgemerkt",
+			"name": "Ungestützte Teile fallen auch bei vollem detailliertem Trümmerpool",
+			"passed": true
+		},
+		{
+			"detail": "0 Bauteile noch vorgemerkt",
+			"name": "Vollständiger Stützverlust wird innerhalb von 25 Sekunden abgearbeitet",
+			"passed": true
+		},
+		{
+			"detail": "6 / 72",
+			"name": "Anzahl lebender Trümmerphysikkörper bleibt begrenzt",
+			"passed": true
+		},
+		{
+			"detail": "0 eingefrorene Körper über 1 m",
+			"name": "Keine Trümmer werden per Zeitschalter in der Luft eingefroren",
+			"passed": true
+		},
+		{
+			"detail": "1169 verbleibende Schuttelemente",
+			"name": "Ruhende Trümmer bleiben als Schutthaufen erhalten",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Auftragsneustart entfernt Altlasten des Einsturzes",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Realismusprüfung verändert kein Firmenkonto",
+			"passed": true
+		},
+		{
+			"detail": "",
+			"name": "Realismusprüfung lässt Originalspielstand bytegenau unverändert",
+			"passed": true
+		}
+	],
+	"timestamp_utc": "2026-10-16T14:08:54"
+}

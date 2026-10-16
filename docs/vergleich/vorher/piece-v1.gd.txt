@@ -1,0 +1,53 @@
+extends StaticBody3D
+class_name AbrissPiece
+
+var piece_id: int = -1
+var size: Vector3 = Vector3.ONE
+var kind: String = "brick"
+var health: float = 70.0
+var max_health: float = 70.0
+var anchored: bool = false
+var removed: bool = false
+var neighbors: Array[int] = []
+var visual: MeshInstance3D
+var material: StandardMaterial3D
+
+func setup(id: int, location: Vector3, dimensions: Vector3, surface: String, base_material: StandardMaterial3D) -> void:
+	piece_id = id
+	position = location
+	size = dimensions
+	kind = surface
+	anchored = location.y < 0.85
+	max_health = {"brick": 65.0, "concrete": 95.0, "wood": 42.0, "glass": 15.0}.get(kind, 65.0)
+	health = max_health
+	collision_layer = 2
+	collision_mask = 0
+	material = base_material
+	visual = MeshInstance3D.new()
+	var mesh := BoxMesh.new()
+	mesh.size = size
+	visual.mesh = mesh
+	visual.material_override = material
+	add_child(visual)
+	var shape := CollisionShape3D.new()
+	var box := BoxShape3D.new()
+	box.size = size
+	shape.shape = box
+	add_child(shape)
+
+func hit(amount: float) -> bool:
+	if removed:
+		return false
+	health -= amount
+	if health <= 0.0:
+		return true
+	var damaged := material.duplicate() as StandardMaterial3D
+	damaged.albedo_color = material.albedo_color.darkened(0.18 + (1.0 - health / max_health) * 0.25)
+	visual.material_override = damaged
+	return false
+
+func deactivate() -> void:
+	removed = true
+	visible = false
+	collision_layer = 0
+	set_collision_layer_value(2, false)
