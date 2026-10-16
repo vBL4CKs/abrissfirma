@@ -1,21 +1,25 @@
 # GitHub-Veröffentlichung
 
-Vorbereitet ist ein öffentliches Projekt mit dem Namen `abrissfirma`.
+Öffentliches Projekt: [vBL4CKs/abrissfirma](https://github.com/vBL4CKs/abrissfirma).
+
+Windows-Download: [Release v0.2.0](https://github.com/vBL4CKs/abrissfirma/releases/tag/v0.2.0).
+Browserfassung: [Abrissfirma spielen](https://vbl4cks.github.io/abrissfirma/).
 
 - `main`: Quellcode, Spielressourcen, Anleitung und Vergleichsaufnahmen.
 - Release `v0.2.0`: `Abrissfirma-Spielbereit.zip` als Windows-Download.
-- `gh-pages`: separat exportierte Browserfassung für GitHub Pages, sobald
-  Export und Browserprüfung erfolgreich abgeschlossen sind.
+- `gh-pages`: separat exportierte Browserfassung für GitHub Pages.
 
 Die großen lokalen Godot-Programme und fertigen Exportdateien bleiben außerhalb
 des Quellcode-Commits. Texturen und Geräusche mit ihren Lizenzhinweisen sind enthalten.
 
-## Voraussetzung
+## Erneut veröffentlichen
 
-Die GitHub-Anmeldung muss vom Kontoinhaber auf GitHub abgeschlossen werden.
-Erst eine erfolgreich bestätigte Anmeldung erlaubt das Erstellen des Repositories,
-das Hochladen und das Aktivieren von GitHub Pages. Eine Bestätigung allein im Chat
-ersetzt diese Anmeldung nicht.
+Nach Änderungen die passende Ausgabe mit Godot exportieren. Lokal befinden sich
+die Exportvorlagen unter `tools/export-templates/`; sie werden nicht hochgeladen.
+Für eine neue Arbeitskopie die passenden Godot-Exportvorlagen installieren und
+die benutzerdefinierten Vorlagenpfade in den Export-Einstellungen anpassen.
+Der separate lokale Ordner `tools/pages-publish/` enthält den Veröffentlichungszweig.
+Eine neue Windows-Ausgabe als neue Release-Version hochladen.
 
 ## Browserfassung
 

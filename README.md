@@ -12,7 +12,14 @@ Die spielbereite Ausgabe wird unter **Releases** dieses GitHub-Projekts als
 `Abrissfirma-Spielbereit.zip` bereitgestellt. ZIP entpacken und
 `Abrissfirma.exe` doppelt anklicken. Dafür ist kein Godot-Editor erforderlich.
 
-Dieser Quellcode-Upload ist noch keine direkt im Browser spielbare Version.
+## Direkt im Browser spielen
+
+[Abrissfirma im Browser öffnen](https://vbl4cks.github.io/abrissfirma/).
+Die erste Ladephase überträgt rund 52 MB. Benötigt werden ein aktueller
+Desktop-Browser mit WebGL 2 sowie Tastatur und Maus. Die Browserfassung ist
+eine zusätzliche Testversion; die Windows-Ausgabe bleibt separat verfügbar.
+Spielstände werden im jeweiligen Browser gespeichert und nicht mit der
+Windows-Version synchronisiert. Beim Löschen der Websitedaten gehen sie verloren.
 
 ## Quellcode öffnen
 
@@ -140,7 +147,7 @@ Godot bezeichnet diesen Speicherort intern als `user://abrissfirma_save.json`.
 3. Einen steuerbaren Abrissbagger mit Außenkamera entwickeln.
 4. Kran und Abrissbirne spielbar machen.
 5. Betriebshof, Maschinenkäufe und Mitarbeiter mit Aufgaben hinzufügen.
-6. Freien Modus, Export als eigenständiges Windows-Spiel und Leistungsoptimierung ergänzen.
+6. Freien Modus und weitere Leistungsoptimierung ergänzen.
 
 ## Prüfung und echte Spielansichten
 
