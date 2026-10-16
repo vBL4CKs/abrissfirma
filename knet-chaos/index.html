@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#211337">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="KNET CHAOS">
+  <meta name="description" content="Zieh. Ziel. Platsch. Rette deine Blob-Freunde in sechs handgemachten 3D-Parcours.">
+  <title>KNET CHAOS · Zieh. Ziel. Platsch.</title>
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icon-180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="app">
+    <section id="home" class="screen home" aria-label="Startseite">
+      <div class="hero-art" aria-hidden="true"></div>
+      <div class="home-shade" aria-hidden="true"></div>
+      <header class="home-header">
+        <div class="wordmark" aria-label="Knet Chaos"><span>KNET</span><span>CHAOS<i></i></span></div>
+        <div class="header-tools"><div class="star-wallet" title="Deine erspielten Sterne"><span>★</span><b id="total-stars">0</b></div><button class="icon-button settings-open" aria-label="Einstellungen"><svg><use href="#gear"/></svg></button></div>
+      </header>
+      <div class="home-bottom">
+        <div class="home-caption"><span class="eyebrow">EIN KLEINER BLOB. EIN GROSSES ABENTEUER.</span><h1>Zieh. Ziel. Platsch.</h1></div>
+        <button id="play" class="play-button"><svg><use href="#play-icon"/></svg>SPIELEN</button>
+        <div class="home-cards">
+          <button id="level-card" class="home-card"><span class="card-art island-art" aria-hidden="true"><i></i><i></i><i></i><b>⚑</b></span><span><strong id="continue-level">Level 1</strong><small id="continue-name">Dein erster Sprung</small></span><svg class="chevron"><use href="#chevron"/></svg></button>
+          <button id="looks-card" class="home-card"><span class="card-art"><span class="mini-blob pink"><i></i><i></i><b></b></span></span><span><strong>Dein Blob</strong><small>Mach ihn zu deinem.</small></span><svg class="chevron"><use href="#chevron"/></svg></button>
+        </div>
+        <nav class="bottom-nav" aria-label="Hauptmenü"><button class="nav-item active" id="nav-home"><svg><use href="#house"/></svg><span>Start</span></button><button class="nav-item" id="nav-looks"><svg><use href="#palette"/></svg><span>Looks</span></button><button class="nav-item" id="nav-levels"><svg><use href="#map"/></svg><span>Levels</span></button></nav>
+      </div>
+    </section>
+    <section id="game" class="screen game" hidden aria-label="Spiel">
+      <div id="scene" role="img" aria-label="3D-Parcours: Ziehe den türkisen Blob zurück und lass ihn zum grünen Freund fliegen."></div>
+      <header class="game-header"><button id="back-home" class="icon-button glass" aria-label="Zur Startseite"><svg><use href="#back"/></svg></button><div class="level-heading"><span id="game-level">LEVEL 1 / 6</span><h2 id="level-name">Dein erster Sprung</h2></div><button id="pause" class="icon-button glass" aria-label="Spiel pausieren"><svg><use href="#pause-icon"/></svg></button></header>
+      <div class="game-status"><span id="rings-status">○ 0 / 1</span><span id="shots-status">1. Versuch</span></div>
+      <div id="toast" class="toast" role="status"></div>
+      <div class="game-bottom"><div id="aim-hint" class="aim-hint"><span class="gesture">↙</span><div><strong>Ziehen. Zielen. Loslassen.</strong><small id="hint-detail">Zieh den Blob nach links unten.</small></div></div><div class="game-controls"><button id="retry" class="small-button"><svg><use href="#retry-icon"/></svg>Noch mal</button><button id="aim-help" class="small-button selected" aria-pressed="true"><svg><use href="#target"/></svg>Zielhilfe</button><button id="keyboard-toggle" class="small-button" aria-label="Steuerung ohne Ziehen" title="Steuerung ohne Ziehen"><svg><use href="#sliders"/></svg></button></div><div id="accessible-controls" class="accessible-controls" hidden><label>Winkel <input id="angle" aria-label="Schusswinkel" type="range" min="20" max="85" value="55"></label><label>Kraft <input id="power" aria-label="Schusskraft" type="range" min="3" max="12" step="0.1" value="9"></label><button id="launch-button" class="small-button selected">Los!</button></div></div>
+      <div id="result" class="result-overlay" hidden><div class="result-card"><div id="result-icon" class="result-icon">✦</div><span id="result-eyebrow" class="eyebrow">GUT GELANDET!</span><h2 id="result-title">Freund gerettet!</h2><div id="result-stars" class="result-stars" aria-label="Ergebnis"></div><p id="result-message"></p><button id="result-primary" class="play-button">WEITER <svg><use href="#chevron"/></svg></button><button id="result-secondary" class="text-button">Noch mal spielen</button></div></div>
+    </section>
+    <dialog id="modal"><div class="modal-header"><div><span id="modal-kicker" class="eyebrow">DEIN ABENTEUER</span><h2 id="modal-title">Levels</h2></div><button id="close-modal" class="icon-button" aria-label="Schließen"><svg><use href="#close"/></svg></button></div><div id="modal-content"></div></dialog>
+    <div id="error-message" class="error-message" hidden role="alert"></div>
+  </main>
+  <div class="desktop-note"><span class="note-dot"></span>SPIELBARER PROTOTYP <span>·</span> MAUS ODER TOUCH</div>
+  <div class="rotate-hint" role="status"><span>↻</span><strong>Einmal ins Hochformat drehen.</strong><p>Dann hat dein Blob genug Platz zum Fliegen.</p></div>
+  <svg class="svg-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="play-icon" viewBox="0 0 24 24"><path d="M6 3.5a1.5 1.5 0 0 1 2.3-1.3l13 8.5a1.5 1.5 0 0 1 0 2.6l-13 8.5A1.5 1.5 0 0 1 6 20.5Z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="gear" viewBox="0 0 24 24"><path d="m10 3-1 3-3 1-2-.5-1 3L5 12l-2 2.5 1 3 3-.5 2 1 1 3h4l1-3 2-1 3 .5 1-3-2-2.5 2-2.5-1-3-3 .5-2-1-1-3Z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="house" viewBox="0 0 24 24"><path d="m3 10 9-8 9 8v11h-6v-7H9v7H3Z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="palette" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18c2 0 2-2 1-3s0-3 2-3h3c6 0 3-12-6-12Z"/><circle cx="7" cy="11" r="1"/><circle cx="10" cy="7" r="1"/><circle cx="15" cy="7" r="1"/><circle cx="18" cy="11" r="1"/></symbol>
+    <symbol id="map" viewBox="0 0 24 24"><path d="m3 5 6-2 6 2 6-2v16l-6 2-6-2-6 2Z"/><path d="M9 3v16M15 5v16"/></symbol>
+    <symbol id="chevron" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+    <symbol id="back" viewBox="0 0 24 24"><path d="m15 5-7 7 7 7"/></symbol>
+    <symbol id="close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="pause-icon" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14" stroke-width="4"/></symbol>
+    <symbol id="retry-icon" viewBox="0 0 24 24"><path d="M4 10a8 8 0 1 1 0 5M4 4v6h6"/></symbol>
+    <symbol id="target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 1v4m0 14v4M1 12h4m14 0h4"/></symbol>
+    <symbol id="sliders" viewBox="0 0 24 24"><path d="M5 3v18M12 3v18M19 3v18M2 8h6m1 8h6m1-9h6"/></symbol>
+    <symbol id="volume" viewBox="0 0 24 24"><path d="M3 9v6h4l5 4V5L7 9ZM16 8q5 4 0 8m3-11q8 7 0 14"/></symbol>
+  </defs></svg>
+  <script src="vendor/three.min.js"></script><script src="physics.js"></script><script src="scene.js"></script><script src="app.js"></script>
+</body>
+</html>
